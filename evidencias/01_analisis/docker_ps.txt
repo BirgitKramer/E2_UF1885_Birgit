@@ -1,0 +1,5 @@
+CONTAINER ID   IMAGE                COMMAND                  CREATED       STATUS                       PORTS                                                        NAMES
+e88d6d108302   registry:3           "/entrypoint.sh /etc…"   13 days ago   Up About an hour             5000/tcp, 0.0.0.0:5001->5001/tcp, [::]:5001->5001/tcp        registry3
+29e531104b55   registry:3           "/entrypoint.sh /etc…"   13 days ago   Up About an hour             0.0.0.0:5000->5000/tcp, [::]:5000->5000/tcp                  registry
+33c031cfc52f   odoo:18.0            "/entrypoint.sh odoo"    2 weeks ago   Up About an hour (healthy)   0.0.0.0:8069->8069/tcp, [::]:8069->8069/tcp, 8071-8072/tcp   odoo-dev-PPF
+db90f473f883   postgres:16-alpine   "docker-entrypoint.s…"   2 weeks ago   Up About an hour (healthy)   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp                  postgres-dev-PPF
