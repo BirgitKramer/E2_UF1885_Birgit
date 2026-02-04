@@ -1,7 +1,7 @@
-# E2 UF1885 - Detección, análisis y resolución de incidencias (ERP-CRM)
+042026df -h > evidencias/01analisis/df_h.txt# E2 UF1885 - Detección, análisis y resolución de incidencias (ERP-CRM)
 
-**Alumno:** Birgti  
-**Fecha:** YYYY-MM-DD  
+**Alumno:** Birgit  
+**Fecha:** 2026-02-04  
 **Entorno:** Ubuntu Server + Docker  
 **Contenedores:** odoo-dev (CRM) | postgres-dev (BD)
 
@@ -10,11 +10,22 @@
 ## 1. Análisis inicial del sistema y parámetros de rendimiento
 ### 1.1 Servicios de acceso al CRM
 - Descripción:
+  - Acceso al ERP/CRM (aplicacion web):container odoo-dev-PPF
+  - El servicio de base de datos: contenedor postgres-dev-PPF
+  - Servicio de publicacion de puerto /acceso web: Docker pubblica 8069/tcp
+  - Red y DNS del sistema: interfaz la IP 192.168.1.131
+  - Acceso administrativo remoto: SSH en 22/tcp para tareas de sopporte
 - Evidencias: evidencias/01_analisis/
 
 ### 1.2 Parámetros (CPU / RAM / Disco / Red) y relación con CRM+BD
-- Conclusiones:
-
+- %Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 97.6 id//load average: 0.32, 0.10, 0.03
+- Conclusiones: no hay saturacion de CPU
+- 
+- RAM Mem: 10Gi total       838Mi used      9.2Gi free
+- Conclusiones: hay suficiente memoria, no hay pression ahora mismo con la RAM
+- Disco /dev/sda2        98G  9.3G   84G  11%
+- Red 
+Relacion CRM*BD
 ---
 
 ## 2. Monitorización de procesos y detección de sobrecarga
