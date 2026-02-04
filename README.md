@@ -1,6 +1,6 @@
 # E2 UF1885 - Detección, análisis y resolución de incidencias (ERP-CRM)
 
-**Alumno:** Apellido, Nombre  
+**Alumno:** Birgti  
 **Fecha:** YYYY-MM-DD  
 **Entorno:** Ubuntu Server + Docker  
 **Contenedores:** odoo-dev (CRM) | postgres-dev (BD)
