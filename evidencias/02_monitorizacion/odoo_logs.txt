@@ -1,0 +1,200 @@
+2026-02-05 11:49:27,760 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:49:27] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.018
+2026-02-05 11:49:57,853 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:49:57] "GET /web/health HTTP/1.1" 200 - 5 0.009 0.017
+2026-02-05 11:50:28,020 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:50:28] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.016
+2026-02-05 11:50:58,143 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:50:58] "GET /web/health HTTP/1.1" 200 - 5 0.009 0.018
+2026-02-05 11:51:28,235 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:51:28] "GET /web/health HTTP/1.1" 200 - 5 0.007 0.014
+2026-02-05 11:51:37,878 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) starting 
+2026-02-05 11:51:37,884 1 INFO odoo odoo.addons.mail.models.fetchmail: start checking for new emails on gmail server correoentrar 
+2026-02-05 11:51:38,348 1 INFO odoo odoo.addons.mail.models.fetchmail: General failure when trying to fetch mail from gmail server correoentrar. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/mail/models/fetchmail.py", line 230, in fetch_mail
+    imap_server = server.connect()
+                  ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/mail/models/fetchmail.py", line 161, in connect
+    self._imap_login(connection)
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/fetchmail_server.py", line 42, in _imap_login
+    auth_string = self._generate_oauth2_string(self.user, self.google_gmail_refresh_token)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 157, in _generate_oauth2_string
+    access_token, expiration = self._fetch_gmail_access_token(self.google_gmail_refresh_token)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 105, in _fetch_gmail_access_token
+    response = self._fetch_gmail_token('refresh_token', refresh_token=refresh_token)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 139, in _fetch_gmail_token
+    raise UserError(_('An error occurred when fetching the access token.'))
+odoo.exceptions.UserError: Ocurrió un error al obtener el token de acceso.
+2026-02-05 11:51:38,355 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) done in 0.477s 
+2026-02-05 11:51:38,363 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) processed 0 records, 0 records remaining 
+2026-02-05 11:51:38,367 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) completed 
+2026-02-05 11:51:58,369 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:51:58] "GET /web/health HTTP/1.1" 200 - 5 0.009 0.019
+2026-02-05 11:52:28,607 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:52:28] "GET /web/health HTTP/1.1" 200 - 5 0.010 0.016
+2026-02-05 11:52:59,273 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:52:59] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.016
+2026-02-05 11:53:29,366 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:53:29] "GET /web/health HTTP/1.1" 200 - 5 0.007 0.017
+2026-02-05 11:53:59,618 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:53:59] "GET /web/health HTTP/1.1" 200 - 5 0.010 0.019
+2026-02-05 11:54:30,613 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:54:30] "GET /web/health HTTP/1.1" 200 - 5 0.009 0.016
+2026-02-05 11:55:01,607 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:55:01] "GET /web/health HTTP/1.1" 200 - 5 0.009 0.017
+2026-02-05 11:55:33,037 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:55:33] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.021
+2026-02-05 11:55:48,047 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) starting 
+2026-02-05 11:55:48,053 1 INFO odoo odoo.addons.mail.models.fetchmail: start checking for new emails on gmail server correoentrar 
+2026-02-05 11:55:48,514 1 INFO odoo odoo.addons.mail.models.fetchmail: General failure when trying to fetch mail from gmail server correoentrar. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/mail/models/fetchmail.py", line 230, in fetch_mail
+    imap_server = server.connect()
+                  ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/mail/models/fetchmail.py", line 161, in connect
+    self._imap_login(connection)
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/fetchmail_server.py", line 42, in _imap_login
+    auth_string = self._generate_oauth2_string(self.user, self.google_gmail_refresh_token)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 157, in _generate_oauth2_string
+    access_token, expiration = self._fetch_gmail_access_token(self.google_gmail_refresh_token)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 105, in _fetch_gmail_access_token
+    response = self._fetch_gmail_token('refresh_token', refresh_token=refresh_token)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 139, in _fetch_gmail_token
+    raise UserError(_('An error occurred when fetching the access token.'))
+odoo.exceptions.UserError: Ocurrió un error al obtener el token de acceso.
+2026-02-05 11:55:48,521 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) done in 0.474s 
+2026-02-05 11:55:48,528 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) processed 0 records, 0 records remaining 
+2026-02-05 11:55:48,531 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) completed 
+2026-02-05 11:56:03,518 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:56:03] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.018
+2026-02-05 11:56:35,762 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:56:35] "GET /web/health HTTP/1.1" 200 - 5 0.007 0.015
+2026-02-05 11:57:05,854 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:57:05] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.018
+2026-02-05 11:57:36,877 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:57:36] "GET /web/health HTTP/1.1" 200 - 5 0.005 0.013
+2026-02-05 11:58:07,499 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:58:07] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.016
+2026-02-05 11:58:37,609 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:58:37] "GET /web/health HTTP/1.1" 200 - 5 0.007 0.016
+2026-02-05 11:59:07,700 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:59:07] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.016
+2026-02-05 11:59:37,825 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 11:59:37] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.017
+2026-02-05 12:00:07,930 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:00:07] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.016
+2026-02-05 12:00:38,026 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:00:38] "GET /web/health HTTP/1.1" 200 - 5 0.006 0.015
+2026-02-05 12:00:53,956 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) starting 
+2026-02-05 12:00:53,959 1 INFO odoo odoo.addons.mail.models.fetchmail: start checking for new emails on gmail server correoentrar 
+2026-02-05 12:00:54,425 1 INFO odoo odoo.addons.mail.models.fetchmail: General failure when trying to fetch mail from gmail server correoentrar. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/mail/models/fetchmail.py", line 230, in fetch_mail
+    imap_server = server.connect()
+                  ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/mail/models/fetchmail.py", line 161, in connect
+    self._imap_login(connection)
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/fetchmail_server.py", line 42, in _imap_login
+    auth_string = self._generate_oauth2_string(self.user, self.google_gmail_refresh_token)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 157, in _generate_oauth2_string
+    access_token, expiration = self._fetch_gmail_access_token(self.google_gmail_refresh_token)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 105, in _fetch_gmail_access_token
+    response = self._fetch_gmail_token('refresh_token', refresh_token=refresh_token)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 139, in _fetch_gmail_token
+    raise UserError(_('An error occurred when fetching the access token.'))
+odoo.exceptions.UserError: Ocurrió un error al obtener el token de acceso.
+2026-02-05 12:00:54,429 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) done in 0.473s 
+2026-02-05 12:00:54,435 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) processed 0 records, 0 records remaining 
+2026-02-05 12:00:54,439 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) completed 
+2026-02-05 12:00:54,452 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) starting 
+2026-02-05 12:00:54,456 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) done in 0.004s 
+2026-02-05 12:00:54,462 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) processed 0 records, 0 records remaining 
+2026-02-05 12:00:54,465 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Notification: Notify scheduled messages' (8) completed 
+2026-02-05 12:00:54,478 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) starting 
+2026-02-05 12:00:54,483 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) done in 0.005s 
+2026-02-05 12:00:54,489 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) processed 0 records, 0 records remaining 
+2026-02-05 12:00:54,492 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Email Queue Manager' (3) completed 
+2026-02-05 12:01:08,166 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:01:08] "GET /web/health HTTP/1.1" 200 - 5 0.009 0.019
+2026-02-05 12:01:38,739 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:01:38] "GET /web/health HTTP/1.1" 200 - 5 0.010 0.025
+2026-02-05 12:01:39,704 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) starting 
+2026-02-05 12:01:39,712 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) done in 0.008s 
+2026-02-05 12:01:39,718 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) processed 0 records, 0 records remaining 
+2026-02-05 12:01:39,722 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'SMS: SMS Queue Manager' (14) completed 
+2026-02-05 12:01:39,733 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) starting 
+2026-02-05 12:01:39,738 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) done in 0.005s 
+2026-02-05 12:01:39,742 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) processed 0 records, 0 records remaining 
+2026-02-05 12:01:39,745 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Snailmail: process letters queue' (15) completed 
+2026-02-05 12:01:39,754 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Digest Emails' (16) starting 
+2026-02-05 12:01:39,757 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Digest Emails' (16) done in 0.003s 
+2026-02-05 12:01:39,762 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Digest Emails' (16) processed 0 records, 0 records remaining 
+2026-02-05 12:01:39,764 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Digest Emails' (16) completed 
+2026-02-05 12:01:39,772 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) starting 
+2026-02-05 12:01:39,775 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) done in 0.002s 
+2026-02-05 12:01:39,779 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) processed 0 records, 0 records remaining 
+2026-02-05 12:01:39,782 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Partner Autocomplete: Sync with remote DB' (13) completed 
+2026-02-05 12:02:08,847 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:02:08] "GET /web/health HTTP/1.1" 200 - 5 0.006 0.015
+2026-02-05 12:02:39,368 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:02:39] "GET /web/health HTTP/1.1" 200 - 5 0.007 0.016
+2026-02-05 12:03:09,453 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:03:09] "GET /web/health HTTP/1.1" 200 - 5 0.006 0.014
+2026-02-05 12:03:39,681 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:03:39] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.015
+2026-02-05 12:04:10,658 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:04:10] "GET /web/health HTTP/1.1" 200 - 5 0.009 0.016
+2026-02-05 12:04:40,751 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:04:40] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.017
+2026-02-05 12:05:10,925 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:05:10] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.016
+2026-02-05 12:05:41,028 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:05:41] "GET /web/health HTTP/1.1" 200 - 5 0.007 0.016
+2026-02-05 12:06:02,358 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) starting 
+2026-02-05 12:06:02,364 1 INFO odoo odoo.addons.mail.models.fetchmail: start checking for new emails on gmail server correoentrar 
+2026-02-05 12:06:02,824 1 INFO odoo odoo.addons.mail.models.fetchmail: General failure when trying to fetch mail from gmail server correoentrar. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/mail/models/fetchmail.py", line 230, in fetch_mail
+    imap_server = server.connect()
+                  ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/mail/models/fetchmail.py", line 161, in connect
+    self._imap_login(connection)
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/fetchmail_server.py", line 42, in _imap_login
+    auth_string = self._generate_oauth2_string(self.user, self.google_gmail_refresh_token)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 157, in _generate_oauth2_string
+    access_token, expiration = self._fetch_gmail_access_token(self.google_gmail_refresh_token)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 105, in _fetch_gmail_access_token
+    response = self._fetch_gmail_token('refresh_token', refresh_token=refresh_token)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 139, in _fetch_gmail_token
+    raise UserError(_('An error occurred when fetching the access token.'))
+odoo.exceptions.UserError: Ocurrió un error al obtener el token de acceso.
+2026-02-05 12:06:02,834 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) done in 0.475s 
+2026-02-05 12:06:02,841 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) processed 0 records, 0 records remaining 
+2026-02-05 12:06:02,846 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) completed 
+2026-02-05 12:06:12,106 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:06:12] "GET /web/health HTTP/1.1" 200 - 5 0.007 0.017
+2026-02-05 12:06:42,309 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:06:42] "GET /web/health HTTP/1.1" 200 - 5 0.006 0.016
+2026-02-05 12:07:13,176 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:07:13] "GET /web/health HTTP/1.1" 200 - 5 0.006 0.015
+2026-02-05 12:07:43,562 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:07:43] "GET /web/health HTTP/1.1" 200 - 5 0.007 0.014
+2026-02-05 12:08:13,653 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:08:13] "GET /web/health HTTP/1.1" 200 - 5 0.007 0.017
+2026-02-05 12:08:43,823 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:08:43] "GET /web/health HTTP/1.1" 200 - 5 0.006 0.013
+2026-02-05 12:09:15,076 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:09:15] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.016
+2026-02-05 12:09:45,978 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:09:45] "GET /web/health HTTP/1.1" 200 - 5 0.011 0.025
+2026-02-05 12:10:16,843 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:10:16] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.015
+2026-02-05 12:10:47,141 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:10:47] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.018
+2026-02-05 12:11:10,111 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) starting 
+2026-02-05 12:11:10,114 1 INFO odoo odoo.addons.mail.models.fetchmail: start checking for new emails on gmail server correoentrar 
+2026-02-05 12:11:10,567 1 INFO odoo odoo.addons.mail.models.fetchmail: General failure when trying to fetch mail from gmail server correoentrar. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/mail/models/fetchmail.py", line 230, in fetch_mail
+    imap_server = server.connect()
+                  ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/mail/models/fetchmail.py", line 161, in connect
+    self._imap_login(connection)
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/fetchmail_server.py", line 42, in _imap_login
+    auth_string = self._generate_oauth2_string(self.user, self.google_gmail_refresh_token)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 157, in _generate_oauth2_string
+    access_token, expiration = self._fetch_gmail_access_token(self.google_gmail_refresh_token)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 105, in _fetch_gmail_access_token
+    response = self._fetch_gmail_token('refresh_token', refresh_token=refresh_token)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/google_gmail/models/google_gmail_mixin.py", line 139, in _fetch_gmail_token
+    raise UserError(_('An error occurred when fetching the access token.'))
+odoo.exceptions.UserError: Ocurrió un error al obtener el token de acceso.
+2026-02-05 12:11:10,576 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) done in 0.464s 
+2026-02-05 12:11:10,583 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) processed 0 records, 0 records remaining 
+2026-02-05 12:11:10,587 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Mail: Fetchmail Service' (6) completed 
+2026-02-05 12:11:17,636 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:11:17] "GET /web/health HTTP/1.1" 200 - 5 0.007 0.017
+2026-02-05 12:11:47,730 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:11:47] "GET /web/health HTTP/1.1" 200 - 5 0.009 0.017
+2026-02-05 12:12:18,723 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:12:18] "GET /web/health HTTP/1.1" 200 - 5 0.006 0.015
+2026-02-05 12:12:43,063 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'CRM: enrich leads (IAP)' (29) starting 
+2026-02-05 12:12:43,069 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'CRM: enrich leads (IAP)' (29) done in 0.006s 
+2026-02-05 12:12:43,075 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'CRM: enrich leads (IAP)' (29) processed 0 records, 0 records remaining 
+2026-02-05 12:12:43,079 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'CRM: enrich leads (IAP)' (29) completed 
+2026-02-05 12:12:48,997 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:12:48] "GET /web/health HTTP/1.1" 200 - 5 0.006 0.015
+2026-02-05 12:13:19,938 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:13:19] "GET /web/health HTTP/1.1" 200 - 5 0.009 0.017
+2026-02-05 12:13:50,118 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:13:50] "GET /web/health HTTP/1.1" 200 - 5 0.009 0.017
+2026-02-05 12:14:20,874 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:14:20] "GET /web/health HTTP/1.1" 200 - 5 0.006 0.016
+2026-02-05 12:14:50,979 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:14:50] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.018
+2026-02-05 12:15:21,081 1 INFO odoo werkzeug: 127.0.0.1 - - [05/Feb/2026 12:15:21] "GET /web/health HTTP/1.1" 200 - 5 0.008 0.017

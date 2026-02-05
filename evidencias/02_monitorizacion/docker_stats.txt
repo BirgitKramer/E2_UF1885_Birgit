@@ -1,0 +1,5 @@
+CONTAINER ID   NAME               CPU %     MEM USAGE / LIMIT    MEM %     NET I/O           BLOCK I/O        PIDS
+e88d6d108302   registry3          0.16%     36.46MiB / 10.6GiB   0.34%     1.94kB / 126B     27.3MB / 0B      7
+29e531104b55   registry           0.04%     24.32MiB / 10.6GiB   0.22%     1.79kB / 126B     14.4MB / 0B      7
+33c031cfc52f   odoo-dev-PPF       0.01%     285.8MiB / 10.6GiB   2.63%     9.23MB / 7.53MB   186MB / 20.5kB   6
+db90f473f883   postgres-dev-PPF   0.00%     107MiB / 10.6GiB     0.99%     6.09MB / 8.68MB   69MB / 10.3MB    13
