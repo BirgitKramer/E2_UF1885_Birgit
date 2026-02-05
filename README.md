@@ -1,4 +1,4 @@
-042026df -h > evidencias/01analisis/df_h.txt# E2 UF1885 - Detección, análisis y resolución de incidencias (ERP-CRM)
+# E2 UF1885 - Detección, análisis y resolución de incidencias (ERP-CRM)
 
 **Alumno:** Birgit  
 **Fecha:** 2026-02-04  
@@ -31,8 +31,15 @@ Relacion CRM*BD
 ## 2. Monitorización de procesos y detección de sobrecarga
 ### 2.1 Proceso problemático detectado
 - Proceso/servicio:
+  - Contenedor postgres_dev-PPF (servicio PostgreSQL para ERP/CRM)
+  - Proceso interno forzado: yes > /dev/null & (generador carga CPU)
 - Datos y justificación:
+  - CPU % (postgres_dev-PPF 14498.27%,indica saturacion del core
+  - Consumo de memoria baja 112.7MiB / 10.6GiB   1.04%
+  - Saturacion se produce a nivel del CPU
 - Impacto en el CRM:
+  - Lentidtud extrema en operaciones que dependen de la base de datos
+  - Usuarios perciben bloqueos y esperas prolongadas
 
 ---
 
