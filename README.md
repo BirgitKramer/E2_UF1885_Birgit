@@ -41,22 +41,36 @@ Relacion CRM*BD
   - Lentidtud extrema en operaciones que dependen de la base de datos
   - Usuarios perciben bloqueos y esperas prolongadas
 
----
-
 ## 3. Resolución de una incidencia técnica simulada
 ### 3.1 Síntomas
+- Los usarios no pueden accer als CRM
+- La URL del servicio no responde: "Failed to connect"
 ### 3.2 Diagnóstico
-### 3.3 Acción aplicada
-### 3.4 Verificación
-### 3.5 Rollback
+- Verificar el estdo  de los contenedores (docker ps)
+- El contenedor odoo-dev-PPF no se encuentro en ejecucion
 
----
+### 3.3 Acción aplicada
+- Se produce a restablecer el servicio de contendor, arrancando nuevamente
+  ```
+  sudo docker start odoo-dev-PPF
+  ```
+### 3.4 Verificación
+- Verificacion estado del contenedor
+  ```
+  sudo docker ps
+  ```
+### 3.5 Rollback
+- En esta situacion consiste en arrancar el contenedor como se inicia en la accion aplicada
 
 ## 4. Simulación de saturación del sistema (CPU o Memoria)
 - Técnica utilizada:
+- 
 - Datos capturados:
+- 
 - Análisis:
+- 
 - Verificación requisitos HW/SW:
+- 
 - Registro:
 
 ---
