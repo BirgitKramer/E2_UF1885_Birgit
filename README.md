@@ -72,9 +72,11 @@ Relacion CRM*BD
 - Análisis:
   - Antes de la simulacion el sistema disponia de 8.8Gi de memoria disponible. Tras la simulacion,
    memoria libre se mantien a 8.8Gi, con lo que el sistema se encuentra normal.  
-- Verificación requisitos HW/SW: El sistema cuenta con 10 GiB RAM y no tiene swap configurada. Para entornos ERP/CRM con carga recurrente, esta configuración puede ser insuficiente en picos de consumo de memoria. 
-  Aumentar memoria RAM disponible, o configurar swap como medida preventiva
-- Registro: La simulación se realizó de forma controlada y reversible sin perdida de datos.
+- Verificación requisitos HW/SW:
+  - El sistema cuenta con 10 GiB RAM y no tiene swap configurada. Para entornos ERP/CRM con carga recurrente, esta configuración puede ser insuficiente en picos de consumo de memoria. 
+  - Aumentar memoria RAM disponible, o configurar swap como medida preventiva
+- Registro:
+  - La simulación se realizó de forma controlada y reversible sin perdida de datos.
 
 ---
 
