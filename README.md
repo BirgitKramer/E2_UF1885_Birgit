@@ -72,18 +72,18 @@ Relacion CRM*BD
 - Análisis:
   - Antes de la simulacion el sistema disponia de 8.8Gi de memoria disponible. Tras la simulacion,
    memoria libre se mantien a 8.8Gi, con lo que el sistema se encuentra normal.  
-- Verificación requisitos HW/SW:
-- 
-- Registro:
+- Verificación requisitos HW/SW: El sistema cuenta con 10 GiB RAM y no tiene swap configurada. Para entornos ERP/CRM con carga recurrente, esta configuración puede ser insuficiente en picos de consumo de memoria. 
+  Aumentar memoria RAM disponible, o configurar swap como medida preventiva
+- Registro: La simulación se realizó de forma controlada y reversible sin perdida de datos.
 
 ---
 
 ## 5. Documentación y registro técnico
 ### 5.1 Incidencias detectadas / Acciones / Resultados
 ### 5.2 Interpretación de documentación en inglés (monitorización / rendimiento / administración CRM)
-- Fragmento 1 (EN):
-- Interpretación (ES):
-- Fragmento 2 (EN):
-- Interpretación (ES):
-- Fragmento 3 (EN):
-- Interpretación (ES):
+- Fragmento 1 (EN): “Docker provides built-in commands to monitor container resource usage, including CPU, memory, and network I/O, which helps identify performance bottlenecks.”
+- Interpretación (ES): Docker proporciona comandos integrados que permiten monitorizar el uso de recursos de los contenedores, como CPU y memoria, lo que facilita la identificación de cuellos de botella que pueden afectar al rendimiento del sistema ERP-CRM.
+- Fragmento 2 (EN):“High memory usage can significantly impact application performance, potentially leading to slower response times or service instability.”
+- Interpretación (ES):El uso elevado de memoria puede afectar significativamente el rendimiento de la aplicación, lo que podría generar tiempos de respuesta más lentos o inestabilidad del servicio”.
+- Fragmento 3 (EN):Odoo performance issues are often related to system resource constraints, background jobs, or database load, making monitoring and proper sizing essential.”
+- Interpretación (ES):“Los problemas de rendimiento de Odoo suelen estar relacionados con limitaciones de recursos del sistema, trabajos en segundo plano o carga de la base de datos, lo que hace que la supervisión y el dimensionamiento adecuado sean esenciales”.
