@@ -92,6 +92,6 @@
 - Fragmento 1 (EN): “Docker provides built-in commands to monitor container resource usage, including CPU, memory, and network I/O, which helps identify performance bottlenecks.”
 - Interpretación (ES): Docker proporciona comandos integrados que permiten monitorizar el uso de recursos de los contenedores, como CPU y memoria, lo que facilita la identificación de cuellos de botella que pueden afectar al rendimiento del sistema ERP-CRM.
 - Fragmento 2 (EN): “High memory usage can significantly impact application performance, potentially leading to slower response times or service instability.”
-- Interpretación (ES):
+- Interpretación (ES): “El uso elevado de memoria puede afectar significativamente el rendimiento de la aplicación, lo que podría generar tiempos de respuesta más lentos o inestabilidad del servicio”.
 - Fragmento 3 (EN): “Odoo performance issues are often related to system resource constraints, background jobs, or database load, making monitoring and proper sizing essential.”
-- Interpretación (ES):
+- Interpretación (ES): “Los problemas de rendimiento de Odoo suelen estar relacionados con limitaciones de recursos del sistema, trabajos en segundo plano o carga de la base de datos, lo que hace que la supervisión y el dimensionamiento adecuado sean esenciales”.
