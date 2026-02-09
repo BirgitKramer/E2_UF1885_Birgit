@@ -64,11 +64,14 @@ Relacion CRM*BD
 
 ## 4. Simulación de saturación del sistema (CPU o Memoria)
 - Técnica utilizada:
-- 
+  - Simulacion saturacion de memoria RAM mediante ejecuccion de un proceso que consume gran cantidad de memoria 
+  - provocando una reduccion importante de la memoria libre.
 - Datos capturados:
-- 
+  - free -h > antes y despues de la simulacion
+  - vmstat 1 5 > antes y despues de la simulacion
 - Análisis:
-- 
+  - Antes de la simulacion el sistema disponia de 8.8Gi de memoria disponible. Tras la simulacion,
+   memoria libre se mantien a 8.8Gi, con lo que el sistema se encuentra normal.  
 - Verificación requisitos HW/SW:
 - 
 - Registro:
